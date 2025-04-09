@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Toolbar -->
+            <LinearLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:paddingRight="10dp">
+                <!-- Logo -->
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="85dp"
+                    android:layout_height="82dp"
+                    android:layout_weight="2"
+                    android:contentDescription="Logo"
+                    android:src="@drawable/motogo_logo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/title"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.06" />
+
+                <!-- Tiêu đề -->
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:text="MOTOGO"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    app:layout_constraintEnd_toStartOf="@+id/logo"
+                    app:layout_constraintHorizontal_bias="0.1" />
+
+                <!-- Ảnh Avatar -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ADBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="31dp">
+
+                    <ImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+
+                        android:contentDescription="Avatar"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/avatar" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginEnd="4dp"
+                android:descendantFocusability="blocksDescendants"
+                android:padding="8dp" />
+
+            <LinearLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Công ty cho thuê xe máy MOTOGO"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Địa chỉ liên hệ: 241 Trần Cao Vân, Thanh Khê, Đà Nẵng"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Hotline : 1800-0247-246"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Danh sách sản phẩm -->
+
+    <!-- Footer -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

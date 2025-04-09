@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txtHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="XÁC MINH THÔNG TIN TRÊN CĂN CƯỚC CÔNG DÂN"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gridLayout"
+        tools:layout_editor_absoluteX="141dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="563dp"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtHeading"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="182dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblSoCCCD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Số Căn Cước/ NO"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/lblTen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Họ và tên"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/lblNgaySinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ngày Sinh"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/lblGioiTinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Giới tính"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/lblQuocTich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Quốc tịch"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/lblQueQuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Quê quán"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/lblThuongTru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nơi thường trú"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtSoCCCD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/txtTen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/txtNgaySinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/txtGioiTinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/txtQuocTich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/txtQueQuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/txtThuongTru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="textStart" />
+        </LinearLayout>
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
